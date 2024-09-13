@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Aakarsh Anand"
   pronouns         : # example: "she/her"  
-  bio              : "CS PhD Student"
+  bio              : "CS PhD Student, UCLA"
   location         : "Los Angeles, CA"
-  employer         : "UCLA"
+  employer         : 
   uri              : # URL
   email            : "aanand2@g.ucla.edu" 
 
