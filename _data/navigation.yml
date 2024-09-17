@@ -11,11 +11,8 @@ main:
   # - title: "Experience"
   #   url: /talks/    
 
-  # - title: "Teaching"
-  #   url: /teaching/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
+  - title: "Conferences"
+    url: /conferences/    
         
   # - title: "Blog Posts"
   #   url: /year-archive/
@@ -23,5 +20,8 @@ main:
   - title: "Experience"
     url: /experience/
     
+  - title: "Hobbies"
+    url: /hobbies/
+
   # - title: "Guide"
   #   url: /markdown/

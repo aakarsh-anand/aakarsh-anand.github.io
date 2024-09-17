@@ -21,7 +21,7 @@ repository               : "aakarsh-anand.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "headshot.jpg"
   name             : "Aakarsh Anand"
   pronouns         : # example: "she/her"  
   bio              : "CS PhD Student, UCLA"
@@ -209,13 +209,13 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
+  conferences:
     output: true
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  hobbies:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -243,10 +243,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _conferences
   - scope:
       path: ""
-      type: teaching
+      type: conferences
     values:
       layout: single
       author_profile: true
@@ -261,10 +261,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _hobbies
   - scope:
       path: ""
-      type: portfolio
+      type: hobbies
     values:
       layout: single
       author_profile: true
