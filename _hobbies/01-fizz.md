@@ -2,7 +2,7 @@
 title: "Cottontail Fizz"
 excerpt: "One of my favorite characters from League of Legends!"
 collection: hobbies
-teaser: "/images/fizz/38.jpg"
+teaser: "/images/fizz/38-final.jpg"
 images:
 - "/images/fizz/1.jpg"
 - "/images/fizz/2.jpg"
