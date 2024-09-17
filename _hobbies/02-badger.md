@@ -2,7 +2,7 @@
 title: "Badger"
 excerpt: ""
 collection: hobbies
-teaser: "/images/badger/10.jpg"
+teaser: "/images/badger/10-final.jpg"
 images:
 - "/images/badger/1.jpg"
 - "/images/badger/2.jpg"

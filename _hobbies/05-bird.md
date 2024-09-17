@@ -2,7 +2,7 @@
 title: "Bird 2"
 excerpt: ""
 collection: hobbies
-teaser: "/images/bird-2/5.jpg"
+teaser: "/images/bird-2/5-final.jpg"
 images:
 - "/images/bird-2/1.jpg"
 - "/images/bird-2/2.jpg"

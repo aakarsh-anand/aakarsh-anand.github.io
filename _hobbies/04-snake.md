@@ -2,7 +2,7 @@
 title: "Snake"
 excerpt: ""
 collection: hobbies
-teaser: "/images/snake/6.jpg"
+teaser: "/images/snake/6-final.jpg"
 images:
 - "/images/snake/1.jpg"
 - "/images/snake/2.jpg"
