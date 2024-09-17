@@ -30,3 +30,36 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- end custom head snippets -->
+
+<!-- Add carousel-specific CSS -->
+<style>
+    .carousel {
+    position: relative;
+    }
+
+    .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    }
+
+    .carousel-item {
+    display: none;  /* Hide all items initially */
+    position: relative;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    }
+
+    .carousel-item.active {
+    display: block;  /* Show only the active item */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+    display: none;  /* Keep control buttons available */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    display: none;
+    }
+  </style>
