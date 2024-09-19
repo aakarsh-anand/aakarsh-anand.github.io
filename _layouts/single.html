@@ -4,6 +4,14 @@ layout: default
 
 {% include base_path %}
 
+<head>
+  {% if page.images %}
+    {% for img in page.images %}
+      <link rel="preload" href="{{ img }}" as="image">
+    {% endfor %}
+  {% endif %}
+</head>
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% endif %}
@@ -12,12 +20,6 @@ layout: default
   {% unless paginator %}
     {% include breadcrumbs.html %}
   {% endunless %}
-{% endif %}
-
-{% if page.images %}
-  {% for img in page.images %}
-    <link rel="preload" href="{{ img }}" as="image">
-  {% endfor %}
 {% endif %}
 
 <div id="main" role="main">
