@@ -35,7 +35,7 @@ Selected Coursework
 | Course | Instructor |
 | --- | --- |
 | Machine Learning, ML in Genetics| Sriram Sankararaman |
-| Advance Deep Learning | Jonathan Kao |
+| Advanced Deep Learning | Jonathan Kao |
 | Artificial Intelligence | Guy Van den Broeck |
 | Natural Language Processing | Nanyun Peng |
 | Data Science | Yizhou Sun |
