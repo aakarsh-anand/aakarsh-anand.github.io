@@ -18,4 +18,4 @@ I am mainly focused on Artificial Intelligence with additional directions in Dat
 - Statistical modeling
 - Representation Learning
 - Scalable algorithms
-- Causal inference
+- AI for Science
