@@ -28,7 +28,13 @@ Work experience
 
 * Research Assistant (Jan 2021 - Apr 2022) - UCLA
   * Advisor: [Paul Boutros](https://www.uclahealth.org/departments/urology/iuo/research/faculty-labs/dr-paul-boutros-lab)
-  
+
+Teaching Assistantship
+======
+* AI for Computational Genomics (CS CM121/221)
+
+* Machine Learning Applications in Biomedicine (DS BMED 205)
+
 Selected Coursework
 ======
 
@@ -38,10 +44,10 @@ Selected Coursework
 | Advanced Deep Learning | Jonathan Kao |
 | Artificial Intelligence | Guy Van den Broeck |
 | Natural Language Processing | Nanyun Peng |
-| Data Science | Yizhou Sun |
-| Computer Vision | Bolei Zhou |
-| Statistics | Halyun Jeong |
-| Linear Algebra | Forte Shinko |
+| Graph Neural Networks | Yizhou Sun |
+| Reinforcement Learning | Bolei Zhou |
+| Large Scale Machine Learning | Baharan Mirzasoleiman |
+| Big Data Systems | Harry Xu |
 | Bioinformatics | Harold Pimentel |
 
 <!-- Skills
