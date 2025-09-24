@@ -1,5 +1,5 @@
 ---
-title: "Bird 1"
+title: "Northern Cardinal"
 excerpt: ""
 collection: hobbies
 teaser: "/images/bird-1/7-final.jpg"

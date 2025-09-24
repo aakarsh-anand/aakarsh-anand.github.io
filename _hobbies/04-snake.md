@@ -1,5 +1,5 @@
 ---
-title: "Snake"
+title: "Garter Snake"
 excerpt: ""
 collection: hobbies
 teaser: "/images/snake/6-final.jpg"
