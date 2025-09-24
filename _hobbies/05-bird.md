@@ -1,5 +1,5 @@
 ---
-title: "Bird 2"
+title: "Chickadee"
 excerpt: ""
 collection: hobbies
 teaser: "/images/bird-2/5-final.jpg"

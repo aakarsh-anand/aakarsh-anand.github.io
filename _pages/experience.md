@@ -17,7 +17,7 @@ Education
 
 Work experience
 ======
-* Research Assistant (Jan 2022 - Present) - UCLA
+* PhD Student, Computer Science (Jan 2022 - Present) - UCLA
   * Advisor: [Sriram Sankararaman](https://sriramlab.dgsom.ucla.edu/)
 
 * Software Engineering Intern (Jun 2023 - Sep 2023) - LabCorp
