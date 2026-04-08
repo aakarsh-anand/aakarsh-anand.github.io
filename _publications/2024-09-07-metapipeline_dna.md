@@ -1,12 +1,12 @@
 ---
-title: "Metapipeline-DNA: A Comprehensive Germline & Somatic Genomics Nextflow Pipeline"
+title: "Metapipeline-DNA: A comprehensive germline and somatic genomics Nextflow pipeline"
 collection: publications
 category: manuscripts
 permalink: /publication/2024-09-07-metapipeline_dna
-date: 2024-09-07
-venue: 'bioRxiv'
-paperurl: 'https://www.biorxiv.org/content/10.1101/2024.09.04.611267v1.full.pdf'
+date: 2026-03-23
+venue: 'Cell Reports Methods'
+paperurl: 'https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(26)00040-8#'
 citation: 'Patel, Y., Zhu, C., Yamaguchi, T. N., Wang, N. K., **Anand, A.**, et al.'
 ---
 
-DNA sequencing is becoming more affordable and faster through advances in high-throughput technologies. This rise in data availability has contributed to the development of novel algorithms to elucidate previously obscure features and led to an increased reliance on complex workflows to integrate such tools into analyses pipelines. To facilitate the analysis of DNA sequencing data, we created metapipeline-DNA, a highly configurable and extensible pipeline. It encompasses a broad range of processing including raw sequencing read alignment and recalibration, variant calling, quality control and subclonal reconstruction. Metapipeline-DNA also contains configuration options to select and tune analyses while being robust to failures. This standardizes and simplifies the ability to analyze large DNA sequencing in both clinical and research settings.
+Rapid improvements in DNA sequencing technologies have expanded the breadth of genomic features, ranging from nuclear, mitochondrial, and evolutionary variation in germline and somatic contexts, which can be elucidated from sequencing data. In parallel, analytical workflows required to process and identify these features have become increasingly complex, relying on specialized tools and algorithms with varying assumptions and computational requirements. Comprehensive analysis, therefore, requires significant integration effort, limiting scalability, reproducibility, and consistent quality controls. To address this need for a flexible, robust framework that accommodates diverse sequencing methods and feature classes while being highly scalable and adaptable across computational environments, we created metapipeline-DNA to automate genomic analyses.
