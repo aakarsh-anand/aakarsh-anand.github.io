@@ -1,0 +1,68 @@
+% Shared look and header for resume.tex and cv.tex. Change styling or contact details here only.
+% EB Garamond for reading text; Gill Sans (a macOS system font) for the name, headings, dates, and metadata.
+% No italics anywhere; venues are bold.
+
+\usepackage[lining,scaled=1.06]{ebgaramond}
+\setsansfont{Gill Sans}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{textcase}
+\usepackage{hyperref}
+
+\definecolor{accent}{HTML}{3A6532}
+\definecolor{muted}{HTML}{5F665F}
+\definecolor{rulecolor}{HTML}{BCCFB5}
+
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent, pdfauthor={Aakarsh Anand}}
+
+\pagestyle{empty}
+\hyphenation{RECOMB NeurIPS}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section headings: small letterspaced sans capitals over a hairline
+\newcommand{\secnote}{}
+\newcommand{\sectionnote}[1]{\gdef\secnote{#1}}
+\newcommand{\headwithrule}[1]{{\addfontfeature{LetterSpace=12}\MakeTextUppercase{#1}}%
+  \hspace{0.7em}{\color{rulecolor}\leaders\hrule height 0.72ex depth -0.6ex\hfill}%
+  \ifx\secnote\empty\else\hspace{0.7em}{\normalfont\sffamily\footnotesize\color{muted}\secnote}\global\let\secnote\empty\fi}
+\titleformat{\section}[block]{\sffamily\color{accent}}{}{0pt}{\headwithrule}
+\titlespacing*{\section}{0pt}{8pt}{3.5pt}
+
+\setlist[itemize]{leftmargin=1em, labelsep=0.5em, itemsep=1.5pt, parsep=0pt, topsep=2pt, partopsep=0pt,
+  label={\raisebox{0.15ex}{\scriptsize\color{muted}\textbullet}}}
+
+% ---------- macros ----------
+\newcommand{\me}{\textcolor{black}{\textbf{A.~Anand}}}
+\newcommand{\dates}[1]{{\sffamily\small\color{muted}#1}}
+\newcommand{\note}[1]{{\color{muted}#1}}
+\newcommand{\vn}[1]{{\color{accent}\textbf{#1}}}
+% Separator dot: binds to the preceding word, so a line can end with it but never start with it
+\newcommand{\sep}{\unskip\nobreak\enspace{\color{muted}\textperiodcentered}\hspace{0.5em}\ignorespaces}
+% \role{title}{organization}{dates}
+\newcommand{\role}[3]{\textbf{#1}, #2\hfill\dates{#3}\par}
+% \thread{name}{optional note}
+\newcommand{\thread}[2]{\vspace{3pt}{\sffamily\color{accent}#1}%
+  \if\relax\detokenize{#2}\relax\else{\sffamily\small\color{muted}\sep #2}\fi\par}
+% \pub{title}{authors}{venue}{url}: title on one line, authors and venue beneath
+\newcommand{\pub}[4]{\item \href{#4}{\textcolor{black}{#1}}\\{\small\color{muted}#2}\sep{\small #3}}
+
+% ---------- header ----------
+\newcommand{\header}{%
+  \begin{minipage}[b]{0.5\textwidth}
+    {\sffamily\fontsize{23}{25}\selectfont\color{accent}\addfontfeature{LetterSpace=9}AAKARSH ANAND}
+  \end{minipage}%
+  \begin{minipage}[b]{0.5\textwidth}
+    \raggedleft\sffamily\small
+    \href{mailto:aakarsh@cs.ucla.edu}{aakarsh@cs.ucla.edu}\sep
+    \href{https://aakarsh-anand.github.io}{aakarsh-anand.github.io}\\[1pt]
+    \href{https://scholar.google.com/citations?user=icSvTl8AAAAJ}{Google Scholar}\sep
+    \href{https://github.com/aakarsh-anand}{GitHub}\sep
+    \href{https://www.linkedin.com/in/aakarsh-anand-8943211b4}{LinkedIn}
+  \end{minipage}\par
+  \vspace{4pt}
+  {\color{muted}Machine learning researcher working on foundation models and statistical genetics for
+  health data}\par
+  \vspace{-2pt}}

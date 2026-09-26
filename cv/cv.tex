@@ -1,0 +1,193 @@
+% Full CV: Aakarsh Anand (complete record, no page limit). The one-page resume is resume.tex.
+% Build: make -C cv
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.75in,top=0.55in,bottom=0.7in]{geometry}
+\input{style}
+\hypersetup{pdftitle={Aakarsh Anand - CV}}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\sffamily\footnotesize\color{muted}Aakarsh Anand \sep Curriculum Vitae \sep Updated September 2026}
+\fancyfoot[R]{\sffamily\footnotesize\color{muted}\thepage\ of \pageref{LastPage}}
+
+% A little more air than the one-page resume
+\titlespacing*{\section}{0pt}{9pt}{4.5pt}
+\setlist*[itemize]{itemsep=2.5pt, topsep=2.5pt}
+\newcommand{\subhead}[1]{{\sffamily\color{accent}#1}\par}
+
+\begin{document}
+
+\header
+
+% ---------- education ----------
+\section{Education}
+\textbf{University of California, Los Angeles (UCLA)}\hfill\dates{Los Angeles, CA}\par
+\vspace{1pt}
+Ph.D., Computer Science \sep Advisor: Sriram Sankararaman\hfill\dates{2024 -- 2029 (expected)}\par
+\note{\small\hspace{1em}Major field: Artificial Intelligence \sep Minor fields: Data Science Computing,
+  Computational Systems Biology}\par
+M.S., Computer Science \note{(earned during the Ph.D.)}\hfill\dates{2026}\par
+B.S., Computer Science\hfill\dates{2020 -- 2024}\par
+
+% ---------- research ----------
+\section{Research Experience}
+\role{Graduate Student Researcher}{Sankararaman Lab, UCLA \note{(undergraduate researcher 2022--24)}}{Jan 2022 -- present}
+
+\thread{Foundation models for wearable sensors}{with Yuzhe Yang's lab, UCLA}
+\begin{itemize}
+  \item One of three co-first authors of \textbf{Inertia-1} (NeurIPS 2026). Pretrained motion foundation models
+    from 5M to 100M parameters, using recurrent, Transformer, ViT, and wav2vec-style architectures, on
+    \textbf{18.2M~hours} of accelerometry from \textbf{115K+~people} in NHANES and UK Biobank. Tested how sensor type,
+    body placement, sampling rate, window length, architecture, model size, pretraining objective, and data scale
+    affect performance on 15 downstream datasets covering activity recognition, freezing of gait, and disease
+    prediction.
+  \item Designed and ran the sensor-fusion study, which found that combining body placements and sensor types
+    consistently beats single-sensor models.
+  \item Co-first author of the follow-up journal paper (in prep.), which applies the model to diagnosis, prognosis,
+    quantitative traits, and disease progression in five cohorts. Three of them (NHATS, ALS, and the Personalized
+    Parkinson Project) are held out from pretraining. The paper also studies the genetics of the learned embeddings
+    and early ways of pairing them with LLMs.
+\end{itemize}
+
+\thread{Deep learning for genetics}{}
+\begin{itemize}
+  \item Developing a training loss that makes a network's learned trait heritable and genetically correlated with
+    disease, so a GWAS on it can find loci the original measurement misses. The genetic terms are computed exactly
+    inside the training loop, and the loss works with any architecture.
+\end{itemize}
+
+\thread{Statistical genetics at biobank scale}{}
+\begin{itemize}
+  \item Leading a genome-wide test for gene--gene interactions in rare disease. It extends FAME to carriers of
+    pathogenic variants to study how genetic background changes penetrance. Supported by an Anthropic AI for
+    Science grant.
+  \item Leading a single-cell variance-component model that separates cell-type-shared and cell-type-specific
+    genetic and environmental effects on gene expression, and follows them along continuous cell states.
+  \item Co-leading an atlas of genetic correlation across 3,570 UK Biobank trait pairs, partitioned by
+    tissue-specific gene expression in 53 tissues.
+  \item Ran simulations (calibration, power, runtime) for QuadKAST, FAME, and ENGINE and real-data analyses for
+    FLEX, and added FAME's LD-block removal step.
+\end{itemize}
+
+\vspace{2pt}
+\role{Research Intern (NSF REU)}{Bruins in Genomics Summer Program, UCLA}{Jun -- Sep 2022}
+\begin{itemize}
+  \item Used symbolic regression to explain gene--gene interactions learned by nonlinear models (first-author poster).
+\end{itemize}
+
+\vspace{2pt}
+\role{Research Assistant}{Boutros Lab, UCLA}{Jan 2021 -- Apr 2022}
+\begin{itemize}
+  \item Added the HISAT2 aligner to the lab's Nextflow alignment pipeline, redesigned its configuration, and
+    benchmarked it. The pipeline is now part of Metapipeline-DNA (Cell Reports Methods 2026).
+\end{itemize}
+
+% ---------- publications ----------
+\sectionnote{* equal contribution}\section{Publications}
+\interlinepenalty=10000 % never split a citation across pages
+\subhead{Peer-reviewed}
+\begin{itemize}
+  \pub{Inertia-1: An Open Exploration of Wearable Motion Foundation Models}
+      {Z.~Xu*, \me*, S.~Jiang*, C.~Zhuang, Z.~Shuai, S.~Sankararaman, Y.~Yang}
+      {\vn{NeurIPS 2026}\sep\href{https://github.com/yang-ai-lab/Inertia-1}{code}}
+      {https://arxiv.org/abs/2607.06617}
+  \pub{A biobank-scale method for learning modulators of gene-environment interaction underlying human complex
+      traits from multiple environmental exposures}
+      {Z.~Liu, A.~Ramteke, \me, A.~Gorla, M.~Jeong, S.~Sankararaman}
+      {\vn{Genome Research} 2026\sep selected from RECOMB 2026}
+      {https://doi.org/10.1101/gr.282105.126}
+  \pub{Metapipeline-DNA: A comprehensive germline and somatic genomics Nextflow pipeline}
+      {Y.~Patel, C.~Zhu, T.~N.~Yamaguchi, N.~K.~Wang, \ldots, \me, \ldots, P.~C.~Boutros (43 authors)}
+      {\vn{Cell Reports Methods} 2026}
+      {https://doi.org/10.1016/j.crmeth.2026.101340}
+  \pub{A biobank-scale test of marginal epistasis reveals genome-wide signals of polygenic interaction effects}
+      {B.~Fu, A.~Pazokitoroudi, Z.~Shi, A.~Kar, A.~Xue, \me, P.~Anand, Z.~Liu, R.~Border, P.~Pajukanta,
+      N.~Zaitlen, S.~Sankararaman}
+      {\vn{Nature Genetics} 57(12):3175--3184, 2025}
+      {https://doi.org/10.1038/s41588-025-02411-y}
+  \pub{A scalable adaptive quadratic kernel method for interpretable epistasis analysis in complex traits}
+      {B.~Fu*, P.~Anand*, \me*, J.~Mefford, S.~Sankararaman}
+      {\vn{Genome Research} 34(9):1294--1303, 2024\sep RECOMB 2024}
+      {https://doi.org/10.1101/gr.279140.124}
+\end{itemize}
+\vspace{3pt}
+\subhead{Under review}
+\begin{itemize}
+  \pub{Comprehensive gene heritability estimation reveals the genetic architecture of rare coding variants
+      underlying complex traits}
+      {Z.~Liu, B.~Fu, M.~Jeong, P.~Anand, \me, S.~Jang, A.~Gorla, J.~Zhu, P.~Pajukanta, P.~F.~Palamara,
+      N.~Zaitlen, R.~Border, S.~Sankararaman}
+      {bioRxiv 2025\sep under review at \vn{Nature Genetics}}
+      {https://doi.org/10.1101/2025.10.07.681018}
+\end{itemize}
+
+% ---------- posters ----------
+\section{Posters}
+\begin{itemize}
+  \pub{Explaining potential epistasis in genomic data using symbolic representations of complex black box models}
+      {\me, P.~Anand}
+      {Bruins in Genomics Summer Program, UCLA, August 2022}
+      {https://aakarsh-anand.github.io/files/big_poster.pdf}
+\end{itemize}
+
+% ---------- awards ----------
+\section{Awards, Fellowships, and Grants}
+\role{Anthropic AI for Science Grant}{Rare Disease Research, \$50K in Claude credits}{2026}
+\role{NIH T32 Predoctoral Fellowship}{UCLA Genomic Analysis Training Program}{2026 -- 2027}
+\note{\small\hspace{1em}NHGRI T32 HG002536. One-year appointment, renewable.}\par
+\role{Warren Alpert Computational Biology and AI Network Fellowship}{UCLA}{2024}
+\note{\small\hspace{1em}Attended the Computational Genomics Summer Institute in 2024 and 2025.}\par
+\role{NSF REU Scholarship}{Bruins in Genomics Summer Program, UCLA}{2022}
+\role{Andy Grove Intel Scholarship}{Intel}{2020}
+\role{Dean's Honors List}{UCLA}{2020 -- 2024}
+
+% ---------- teaching ----------
+\section{Teaching}
+\role{Teaching Assistant}{UCLA}{2025 -- 2026}
+\begin{itemize}
+  \item Machine Learning Applications in Genetics (CS C124/224)\hfill\dates{Spring 2026}
+  \item AI for Computational Genomics (CS CM121/221, $\sim$120 students)\hfill\dates{Spring 2025}\\
+    When the first half of the course was rebuilt around AI, co-wrote three new homework assignments and the
+    discussion slides with the other TAs.
+  \item Machine Learning Applications in Biomedicine (DS BMED 205)\hfill\dates{Winter 2025}
+\end{itemize}
+
+% ---------- software ----------
+\section{Software}
+\begin{itemize}
+  \item \href{https://github.com/yang-ai-lab/Inertia-1}{\textbf{Inertia-1}}: open-source wearable motion foundation
+    models (co-developer).
+  \item \href{https://github.com/sriramlab/FAME}{\textbf{FAME}}: added the LD-block removal step and support for
+    missing phenotypes.
+  \item \href{https://github.com/uclahs-cds/pipeline-align-DNA}{\textbf{pipeline-align-DNA}}: added the HISAT2
+    aligner, plus fixes and container updates (8 merged pull requests).
+\end{itemize}
+
+% ---------- industry ----------
+\section{Industry Experience}
+\role{Software Engineering Intern}{LabCorp, Burlington, NC}{Jun -- Sep 2023}
+\begin{itemize}
+  \item Built reproducible Snakemake pipelines for high-volume genetic sequencing data.
+\end{itemize}
+
+% ---------- press ----------
+\section{Press}
+\begin{itemize}
+  \item \href{https://www.uclahealth.org/news/release/researchers-develop-new-computational-tool-understand-how}{%
+    ``Researchers develop a new computational tool to understand how genetic interactions impact human traits''}
+    (on FAME). UCLA Health news release, December 2025.
+\end{itemize}
+
+% ---------- skills ----------
+\section{Skills}
+\textbf{Machine learning:} PyTorch, self-supervised pretraining, time-series models, large-scale evaluation\par
+\textbf{Statistics and genetics:} variance-component models, method of moments, heritability and genetic
+correlation, GWAS (plink2), LDSC, single-cell genetics\par
+\textbf{Engineering:} Python, C++, SLURM/HPC, Snakemake, Nextflow, Docker, Git, Claude Code\par
+\textbf{Data:} UK Biobank, NHANES, NHATS, OneK1K, GTEx\par
+
+\end{document}

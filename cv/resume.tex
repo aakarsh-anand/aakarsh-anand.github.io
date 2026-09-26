@@ -1,0 +1,103 @@
+% One-page resume: Aakarsh Anand. The full CV (everything, no page limit) is cv.tex.
+% Build: make -C cv
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.5in,top=0.45in,bottom=0.4in]{geometry}
+\input{style}
+\hypersetup{pdftitle={Aakarsh Anand - Resume}}
+
+\begin{document}
+
+\header
+
+% ---------- education ----------
+\section{Education}
+\role{Ph.D., Computer Science}{UCLA \sep Major field: AI \sep Advisor: Sriram Sankararaman}{2024 -- 2029 (expected)}
+\role{M.S., Computer Science}{UCLA \note{(earned during the Ph.D.)}}{2026}
+\role{B.S., Computer Science}{UCLA}{2020 -- 2024}
+
+% ---------- research ----------
+\section{Research Experience}
+\role{Graduate Student Researcher}{Sankararaman Lab, UCLA \note{(undergraduate researcher 2022--24)}}{Jan 2022 -- present}
+
+\thread{Foundation models for wearable sensors}{with Yuzhe Yang's lab}
+\begin{itemize}
+  \item Co-first author of \textbf{Inertia-1} (NeurIPS 2026). Pretrained motion foundation models (5M--100M params,
+    6 architectures) on \textbf{18.2M~hours} of accelerometry from \textbf{115K+~people} and compared data, model,
+    and training choices on 15 datasets.
+  \item Designed and ran the sensor-fusion study, which found that multi-sensor models consistently beat single-sensor ones.
+  \item Co-first author of the follow-up journal paper (in prep.)\ on diagnosis, prognosis, and disease progression in
+    five cohorts, including the genetics of the learned embeddings and early work pairing them with LLMs.
+\end{itemize}
+
+\thread{Deep learning for genetics}{}
+\begin{itemize}
+  \item Developing a training loss that makes a network's learned trait heritable and genetically correlated with
+    disease, so a GWAS on it can find loci the original measurement misses. It works with any architecture.
+\end{itemize}
+
+\thread{Statistical genetics at biobank scale}{}
+\begin{itemize}
+  \item Leading a genome-wide test for gene--gene interactions in rare disease, supported by an Anthropic grant.
+  \item Leading a single-cell model of how genetic effects on gene expression shift across cell types and states.
+  \item Co-leading an atlas of genetic correlation across 3,570 UK Biobank trait pairs and 53 tissues.
+  \item Ran simulations (calibration, power, runtime) and real-data analyses for the published methods below.
+\end{itemize}
+
+% ---------- publications ----------
+\sectionnote{* equal contribution}\section{Publications}
+\begin{itemize}
+  \pub{Inertia-1: An Open Exploration of Wearable Motion Foundation Models}
+      {Z.~Xu*, \me*, S.~Jiang*, C.~Zhuang, Z.~Shuai, S.~Sankararaman, Y.~Yang}
+      {\vn{NeurIPS 2026}\sep\href{https://github.com/yang-ai-lab/Inertia-1}{code}}
+      {https://arxiv.org/abs/2607.06617}
+  \pub{A biobank-scale method for learning modulators of gene-environment interaction underlying human complex
+      traits from multiple environmental exposures}
+      {Z.~Liu, A.~Ramteke, \me, A.~Gorla, M.~Jeong, S.~Sankararaman}
+      {\vn{Genome Research 2026}\sep selected from RECOMB 2026}
+      {https://doi.org/10.1101/gr.282105.126}
+  \pub{A biobank-scale test of marginal epistasis reveals genome-wide signals of polygenic interaction effects}
+      {B.~Fu, A.~Pazokitoroudi, Z.~Shi, A.~Kar, A.~Xue, \me, P.~Anand, et al.}
+      {\vn{Nature Genetics 2025}}
+      {https://doi.org/10.1038/s41588-025-02411-y}
+  \pub{A scalable adaptive quadratic kernel method for interpretable epistasis analysis in complex traits}
+      {B.~Fu*, P.~Anand*, \me*, J.~Mefford, S.~Sankararaman}
+      {\vn{Genome Research 2024}\sep RECOMB 2024}
+      {https://doi.org/10.1101/gr.279140.124}
+  \pub{Comprehensive gene heritability estimation reveals the genetic architecture of rare coding variants
+      underlying complex traits}
+      {Z.~Liu, B.~Fu, M.~Jeong, P.~Anand, \me, et al.}
+      {bioRxiv 2025\sep under review at \vn{Nature Genetics}}
+      {https://doi.org/10.1101/2025.10.07.681018}
+\end{itemize}
+
+% ---------- awards ----------
+\section{Awards and Funding}
+\role{Anthropic AI for Science Grant}{Rare Disease Research, \$50K in Claude credits}{2026}
+\role{NIH T32 Predoctoral Fellowship}{UCLA Genomic Analysis Training Program}{2026 -- 2027}
+\role{Warren Alpert Computational Biology and AI Network Fellowship}{UCLA}{2024}
+
+% ---------- teaching ----------
+\section{Teaching}
+\role{Teaching Assistant}{UCLA}{2025 -- 2026}
+\begin{itemize}
+  \item AI for Computational Genomics (Spring 2025, $\sim$120 students). Co-wrote three new assignments
+    for its AI redesign.
+  \item Machine Learning Applications in Genetics (Spring 2026) and Machine Learning Applications
+    in Biomedicine (Winter 2025).
+\end{itemize}
+
+% ---------- earlier experience ----------
+\section{Earlier Experience}
+\role{Software Engineering Intern}{LabCorp \note{\sep Snakemake pipelines for high-volume sequencing data}}{Jun -- Sep 2023}
+\role{Research Assistant}{Boutros Lab, UCLA \note{\sep cancer genomics pipelines, co-author of
+  \href{https://doi.org/10.1016/j.crmeth.2026.101340}{Metapipeline-DNA}}}{2021 -- 2022}
+
+% ---------- skills ----------
+\section{Skills}
+\textbf{Machine learning:} PyTorch, self-supervised pretraining, time-series models, large-scale evaluation\par
+\textbf{Statistics and genetics:} variance-component models, method of moments, GWAS (plink2), LDSC, single-cell genetics\par
+\textbf{Engineering:} Python, C++, SLURM, Snakemake, Nextflow, Claude Code \sep
+\textbf{Data:} UK Biobank, NHANES, OneK1K, GTEx\par
+
+\end{document}
