@@ -15,7 +15,7 @@ author:
   email: aakarsh@cs.ucla.edu
   scholar: https://scholar.google.com/citations?user=icSvTl8AAAAJ
   github: https://github.com/aakarsh-anand
-  linkedin: https://www.linkedin.com/in/aakarsh-anand-8943211b4
+  linkedin: https://www.linkedin.com/in/aakarsh-anand-ml/
   orcid: https://orcid.org/0009-0008-9581-3827
 
 # Used by jekyll-seo-tag for link previews and search results
@@ -25,7 +25,7 @@ social:
   links:
     - https://scholar.google.com/citations?user=icSvTl8AAAAJ
     - https://github.com/aakarsh-anand
-    - https://www.linkedin.com/in/aakarsh-anand-8943211b4
+    - https://www.linkedin.com/in/aakarsh-anand-ml/
     - https://orcid.org/0009-0008-9581-3827
 
 # Own layouts only; stops GitHub Pages from adding its default Primer theme
