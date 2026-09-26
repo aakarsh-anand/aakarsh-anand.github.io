@@ -1,0 +1,33 @@
+---
+layout: base
+---
+{%- assign dir = '/images/art/' | append: page.folder | append: '/' | relative_url -%}
+<article class="art-piece">
+  <h1>{{ page.title }}</h1>
+  <p class="meta">{{ page.medium }}, {{ page.size }}</p>
+
+  <figure class="art-final">
+    <img src="{{ dir }}final.webp" alt="{{ page.title }}, the finished painting" width="{{ page.width }}" height="{{ page.height }}">
+  </figure>
+  {{ content }}
+
+  {%- if page.frames > 0 %}
+  <section class="process" data-dir="{{ dir }}" data-frames="{{ page.frames }}">
+    <h2>Process</h2>
+    <p class="hint">Drag the slider, or press Play, to watch the painting come together.</p>
+    <div class="process-view" style="aspect-ratio: {{ page.width }} / {{ page.height }}">
+      <img src="{{ dir }}01.webp" alt="Process photo 1 of {{ page.frames }}" loading="lazy">
+    </div>
+    <div class="process-controls">
+      <button type="button" class="play">Play</button>
+      <button type="button" data-step="-1" aria-label="Previous photo">&larr;</button>
+      <input type="range" min="1" max="{{ page.frames }}" value="1" aria-label="Process photo">
+      <button type="button" data-step="1" aria-label="Next photo">&rarr;</button>
+      <output>1 / {{ page.frames }}</output>
+    </div>
+  </section>
+  <script src="{{ '/assets/site/process.js' | relative_url }}" defer></script>
+  {%- endif %}
+
+  <p class="more"><a href="{{ '/art/' | relative_url }}">&larr; All paintings</a></p>
+</article>

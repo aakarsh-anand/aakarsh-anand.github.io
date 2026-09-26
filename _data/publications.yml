@@ -1,0 +1,60 @@
+# Publications on the site, newest first. "A. Anand" is bolded automatically; * marks equal contribution.
+# status: published | review | poster.  selected: true puts it on the home page.
+- title: "Inertia-1: An Open Exploration of Wearable Motion Foundation Models"
+  authors: "Z. Xu*, A. Anand*, S. Jiang*, C. Zhuang, Z. Shuai, S. Sankararaman, Y. Yang"
+  venue: NeurIPS 2026
+  status: published
+  selected: true
+  url: https://arxiv.org/abs/2607.06617
+  links:
+    code: https://github.com/yang-ai-lab/Inertia-1
+    project: https://yang-ai-lab.github.io/Inertia-1/
+
+- title: "A biobank-scale method for learning modulators of gene-environment interaction underlying human complex traits from multiple environmental exposures"
+  authors: "Z. Liu, A. Ramteke, A. Anand, A. Gorla, M. Jeong, S. Sankararaman"
+  venue: Genome Research 2026
+  note: selected from RECOMB 2026
+  status: published
+  selected: true
+  url: https://doi.org/10.1101/gr.282105.126
+  links:
+    code: https://github.com/sriramlab/ENGINE
+
+- title: "Metapipeline-DNA: A comprehensive germline and somatic genomics Nextflow pipeline"
+  authors: "Y. Patel, C. Zhu, T. N. Yamaguchi, N. K. Wang, …, A. Anand, …, P. C. Boutros (43 authors)"
+  venue: Cell Reports Methods 2026
+  status: published
+  url: https://doi.org/10.1016/j.crmeth.2026.101340
+
+- title: "A biobank-scale test of marginal epistasis reveals genome-wide signals of polygenic interaction effects"
+  authors: "B. Fu, A. Pazokitoroudi, Z. Shi, A. Kar, A. Xue, A. Anand, P. Anand, Z. Liu, R. Border, P. Pajukanta, N. Zaitlen, S. Sankararaman"
+  venue: Nature Genetics 2025
+  status: published
+  selected: true
+  url: https://doi.org/10.1038/s41588-025-02411-y
+  links:
+    code: https://github.com/sriramlab/FAME
+    press: https://www.uclahealth.org/news/release/researchers-develop-new-computational-tool-understand-how
+
+- title: "A scalable adaptive quadratic kernel method for interpretable epistasis analysis in complex traits"
+  authors: "B. Fu*, P. Anand*, A. Anand*, J. Mefford, S. Sankararaman"
+  venue: Genome Research 2024
+  note: RECOMB 2024
+  status: published
+  selected: true
+  url: https://doi.org/10.1101/gr.279140.124
+  links:
+    code: https://github.com/sriramlab/QuadKAST
+
+- title: "Comprehensive gene heritability estimation reveals the genetic architecture of rare coding variants underlying complex traits"
+  authors: "Z. Liu, B. Fu, M. Jeong, P. Anand, A. Anand, S. Jang, A. Gorla, J. Zhu, P. Pajukanta, P. F. Palamara, N. Zaitlen, R. Border, S. Sankararaman"
+  venue: bioRxiv 2025
+  note: under review at Nature Genetics
+  status: review
+  url: https://doi.org/10.1101/2025.10.07.681018
+
+- title: "Explaining potential epistasis in genomic data using symbolic representations of complex black box models"
+  authors: "A. Anand, P. Anand"
+  venue: Bruins in Genomics Summer Program, UCLA, 2022
+  status: poster
+  url: /files/big_poster.pdf

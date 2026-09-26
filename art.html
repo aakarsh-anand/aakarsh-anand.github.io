@@ -1,0 +1,17 @@
+---
+title: Art
+permalink: /art/
+redirect_from:
+  - /hobbies/
+---
+<p>I paint in oils, acrylics, watercolor, and chalk pastel. Each painting's page has a slider that steps through the photos I took while making it.</p>
+<div class="art-grid">
+{%- assign pieces = site.art | sort: "order" %}
+{%- for piece in pieces %}
+  <a class="art-card" href="{{ piece.url | relative_url }}">
+    <img src="{{ '/images/art/' | append: piece.folder | append: '/thumb.webp' | relative_url }}" alt="{{ piece.title }}" style="aspect-ratio: {{ piece.width }} / {{ piece.height }}" loading="lazy">
+    <span class="art-title">{{ piece.title }}</span>
+    <span class="art-meta">{{ piece.medium }}</span>
+  </a>
+{%- endfor %}
+</div>

@@ -1,0 +1,13 @@
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header wrap">
+  {%- if page.layout == 'home' %}
+  <h1 class="site-name"><a href="{{ '/' | relative_url }}">Aakarsh Anand</a></h1>
+  {%- else %}
+  <a class="site-name" href="{{ '/' | relative_url }}">Aakarsh Anand</a>
+  {%- endif %}
+  <nav aria-label="Main">
+    <a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} aria-current="page"{% endif %}>Publications</a>
+    <a href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} aria-current="page"{% endif %}>CV</a>
+    <a href="{{ '/art/' | relative_url }}"{% if page.url == '/art/' or page.collection == 'art' %} aria-current="page"{% endif %}>Art</a>
+  </nav>
+</header>

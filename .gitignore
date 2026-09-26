@@ -1,12 +1,16 @@
-# Ignore the contents of the _site directory
+# Jekyll build output and caches
 _site/
-
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
 Gemfile.lock
 
-# Ingore files created by npm
-node_modules
-package-lock.json
+# macOS
+.DS_Store
+
+# Private notes/context for resume + site work (unpublished research; never commit)
+temp/
+
+# LaTeX build output (the published PDFs live in files/)
+cv/build/

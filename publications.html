@@ -1,0 +1,29 @@
+---
+title: Publications
+permalink: /publications/
+redirect_from:
+  - /conferences/
+  - /publication/2023-09-12-fame
+  - /publication/2024-08-13-quadkast
+  - /publication/2024-09-07-metapipeline_dna
+  - /publication/2025-10-08-flex
+  - /publication/2026-03-16-engine
+  - /conference/2022-08-12-big
+  - /conference/2024-08-13-quadkast
+---
+<p class="note">Also on <a href="{{ site.author.scholar }}">Google Scholar</a>. * marks equal contribution.</p>
+
+<h2>Peer-reviewed</h2>
+<ul class="pubs">
+{%- for pub in site.data.publications %}{% if pub.status == "published" %}{% include pub-item.html pub=pub %}{% endif %}{% endfor %}
+</ul>
+
+<h2>Under review</h2>
+<ul class="pubs">
+{%- for pub in site.data.publications %}{% if pub.status == "review" %}{% include pub-item.html pub=pub %}{% endif %}{% endfor %}
+</ul>
+
+<h2>Posters</h2>
+<ul class="pubs">
+{%- for pub in site.data.publications %}{% if pub.status == "poster" %}{% include pub-item.html pub=pub %}{% endif %}{% endfor %}
+</ul>

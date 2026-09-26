@@ -1,0 +1,19 @@
+# News on the home page, newest first. Text is Markdown. Dates only need the right month.
+- date: 2026-09-24
+  text: "[Inertia-1](https://arxiv.org/abs/2607.06617) was accepted to NeurIPS 2026."
+- date: 2026-09-01
+  text: "Started an NIH T32 fellowship with UCLA's Genomic Analysis Training Program."
+- date: 2026-08-18
+  text: "[ENGINE](https://doi.org/10.1101/gr.282105.126) is out in Genome Research, selected from RECOMB 2026."
+- date: 2026-08-01
+  text: "Received an [Anthropic AI for Science grant](https://www.anthropic.com/news/rare-disease-research-grants) for rare disease research."
+- date: 2026-07-07
+  text: "Posted [Inertia-1](https://arxiv.org/abs/2607.06617) on arXiv, with [open code](https://github.com/yang-ai-lab/Inertia-1)."
+- date: 2026-06-12
+  text: "Finished my M.S. in Computer Science."
+- date: 2026-03-17
+  text: "[Metapipeline-DNA](https://doi.org/10.1016/j.crmeth.2026.101340) is out in Cell Reports Methods."
+- date: 2025-12-09
+  text: "[FAME](https://doi.org/10.1038/s41588-025-02411-y) is out in Nature Genetics. [UCLA Health wrote about it](https://www.uclahealth.org/news/release/researchers-develop-new-computational-tool-understand-how)."
+- date: 2025-10-08
+  text: "Posted [FLEX](https://doi.org/10.1101/2025.10.07.681018) on bioRxiv."
