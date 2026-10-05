@@ -18,7 +18,7 @@ redirect_from:
 {%- for pub in site.data.publications %}{% if pub.status == "published" %}{% include pub-item.html pub=pub %}{% endif %}{% endfor %}
 </ul>
 
-<h2>Under review</h2>
+<h2>In revision</h2>
 <ul class="pubs">
 {%- for pub in site.data.publications %}{% if pub.status == "review" %}{% include pub-item.html pub=pub %}{% endif %}{% endfor %}
 </ul>

@@ -29,9 +29,9 @@
   \hspace{0.7em}{\color{rulecolor}\leaders\hrule height 0.72ex depth -0.6ex\hfill}%
   \ifx\secnote\empty\else\hspace{0.7em}{\normalfont\sffamily\footnotesize\color{muted}\secnote}\global\let\secnote\empty\fi}
 \titleformat{\section}[block]{\sffamily\color{accent}}{}{0pt}{\headwithrule}
-\titlespacing*{\section}{0pt}{8pt}{3.5pt}
+\titlespacing*{\section}{0pt}{7pt}{3.5pt}
 
-\setlist[itemize]{leftmargin=1em, labelsep=0.5em, itemsep=1.5pt, parsep=0pt, topsep=2pt, partopsep=0pt,
+\setlist[itemize]{leftmargin=1em, labelsep=0.5em, itemsep=1.2pt, parsep=0pt, topsep=2pt, partopsep=0pt,
   label={\raisebox{0.15ex}{\scriptsize\color{muted}\textbullet}}}
 
 % ---------- macros ----------
@@ -48,6 +48,8 @@
   \if\relax\detokenize{#2}\relax\else{\sffamily\small\color{muted}\sep #2}\fi\par}
 % \pub{title}{authors}{venue}{url}: title on one line, authors and venue beneath
 \newcommand{\pub}[4]{\item \href{#4}{\textcolor{black}{#1}}\\{\small\color{muted}#2}\sep{\small #3}}
+% \pubnolink{title}{authors}{venue}: same, for manuscripts with no public link yet
+\newcommand{\pubnolink}[3]{\item \textcolor{black}{#1}\\{\small\color{muted}#2}\sep{\small #3}}
 
 % ---------- header ----------
 \newcommand{\header}{%
