@@ -5,14 +5,14 @@ redirect_from:
   - /about/
   - /about.html
 intro: |
-  I'm a PhD student in computer science at UCLA, advised by [Sriram Sankararaman](https://sriramlab.dgsom.ucla.edu/). I build foundation models and statistical methods for biobank-scale health data. What ties my work together is the goal of models that predict well and also teach us about genetics.
+  I'm a PhD student in computer science at UCLA, advised by [Sriram Sankararaman](https://sriramlab.dgsom.ucla.edu/). I build foundation models and statistical methods for biobank-scale health data. I use both to understand the biology behind disease.
 
   My work is supported by an NIH T32 fellowship and an Anthropic AI for Science grant. Outside research, I paint ([a few pieces are here](/art/)), play piano and French horn, and dance hip-hop.
 ---
 
 ## Research
 
-Biobanks now pair genomes with many kinds of health data for hundreds of thousands of people: wearable sensors, medical imaging, lung function tests, blood biomarkers, and health records. I build models that learn from these data and use statistical genetics to understand what the models capture.
+Biobanks now pair genomes with many kinds of health data for hundreds of thousands of people, including wearable sensors, medical imaging, lung function tests, blood biomarkers, and health records. I build foundation models that learn from these data and statistical genetics methods that find how genes shape health and disease.
 
 My recent modeling work is on wearable sensors. I co-led [Inertia-1](https://arxiv.org/abs/2607.06617) (NeurIPS 2026) with [Yuzhe Yang's lab](https://yang-ai-lab.github.io/), an open study of how to pretrain motion foundation models on 18 million hours of accelerometry. Our follow-up study tests the model on diagnosis, prognosis, and disease progression, and measures how much genetic signal its learned representations share with disease.
 
