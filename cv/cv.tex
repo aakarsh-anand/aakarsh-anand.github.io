@@ -39,14 +39,12 @@ B.S., Computer Science\hfill\dates{2020 -- 2024}\par
 
 \thread{Foundation models for wearable sensors}{with Yuzhe Yang's lab, UCLA}
 \begin{itemize}
-  \item One of three co-first authors of \textbf{Inertia-1} (NeurIPS 2026). Pretrained motion foundation models
+  \item One of three co-first authors of \textbf{Inertia-1} (NeurIPS 2026, main track). Pretrained motion foundation models
     from 5M to 100M parameters, using recurrent, Transformer, ViT, and wav2vec-style architectures, on
-    18.2M~hours of accelerometry from 115K+~people in NHANES and UK Biobank. Tested how sensor type,
-    body placement, sampling rate, window length, architecture, model size, pretraining objective, and data scale
-    affect performance on 15 downstream datasets covering activity recognition, freezing of gait, and disease
+    18.2M~hours of accelerometry from 115K+~people in NHANES and UK Biobank. Tested how data, model, and
+    training choices affect performance on 15 downstream datasets covering activity recognition, freezing of gait, and disease
     prediction.
-  \item Designed and ran the sensor-fusion study, which found that combining body placements and sensor types
-    consistently beats single-sensor models.
+  \item Designed and ran the sensor-fusion study, which found that multi-sensor models consistently beat single sensors.
   \item Co-first author of the follow-up journal paper (in prep.), which applies the model to diagnosis, prognosis,
     quantitative traits, and disease progression in five cohorts. Three of them (NHATS, ALS, and the Personalized
     Parkinson Project) are held out from pretraining. The paper also studies the genetics of the learned embeddings
@@ -96,7 +94,7 @@ B.S., Computer Science\hfill\dates{2020 -- 2024}\par
 \begin{itemize}
   \pub{Inertia-1: An Open Exploration of Wearable Motion Foundation Models}
       {Z.~Xu*, \me*, S.~Jiang*, C.~Zhuang, Z.~Shuai, S.~Sankararaman, Y.~Yang}
-      {\vn{NeurIPS 2026}\sep\href{https://github.com/yang-ai-lab/Inertia-1}{code}}
+      {\vn{NeurIPS 2026 main track}\sep also an oral at the GenAI for Health workshop\sep\href{https://github.com/yang-ai-lab/Inertia-1}{code}}
       {https://arxiv.org/abs/2607.06617}
   \pub{A biobank-scale method for learning modulators of gene-environment interaction underlying human complex
       traits from multiple environmental exposures}
@@ -132,9 +130,10 @@ B.S., Computer Science\hfill\dates{2020 -- 2024}\par
       {https://doi.org/10.1101/2025.10.07.681018}
 \end{itemize}
 
-% ---------- posters ----------
-\section{Posters}
+% ---------- talks and posters ----------
+\section{Talks and Posters}
 \begin{itemize}
+  \item Oral: Inertia-1, at The Third Workshop on GenAI for Health, NeurIPS 2026, Sydney\hfill\dates{Dec 2026}
   \pub{Explaining potential epistasis in genomic data using symbolic representations of complex black box models}
       {\me, P.~Anand}
       {Bruins in Genomics Summer Program, UCLA, August 2022}
@@ -194,7 +193,7 @@ B.S., Computer Science\hfill\dates{2020 -- 2024}\par
 \textbf{Machine learning:} PyTorch, scikit-learn, Transformers, self-supervised pretraining, time-series and wearable sensor data\par
 \textbf{Statistics and genetics:} variance-component models, method-of-moments estimation, heritability and genetic
 correlation, GWAS, LDSC, single-cell genomics\par
-\textbf{Engineering:} Python, NumPy/pandas, Weights \& Biases, SLURM/HPC, Git, Claude Code\par
+\textbf{Engineering:} Python, NumPy/pandas, Weights \& Biases, SLURM/HPC, Git, Claude Code \sep
 \textbf{Data:} UK Biobank, NHANES, NHATS, OneK1K, GTEx\par
 
 \end{document}

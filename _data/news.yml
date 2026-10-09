@@ -1,4 +1,6 @@
 # News on the home page, newest first. Text is Markdown. Dates only need the right month.
+- date: 2026-10-08
+  text: "[Inertia-1](https://arxiv.org/abs/2607.06617), accepted to the NeurIPS 2026 main track, will also be an oral at the [GenAI for Health workshop](https://genai4health.github.io/2026-NeurIPS/) at NeurIPS 2026 in Sydney. I'm presenting it in December."
 - date: 2026-09-24
   text: "[Inertia-1](https://arxiv.org/abs/2607.06617) was accepted to NeurIPS 2026."
 - date: 2026-09-01
