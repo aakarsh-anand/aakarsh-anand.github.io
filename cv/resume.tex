@@ -20,28 +20,30 @@
 \section{Research Experience}
 \role{Graduate Student Researcher}{Sankararaman Lab, UCLA \note{(undergraduate researcher 2022--24)}}{Jan 2022 -- present}
 
-\thread{Foundation models for wearable sensors}{with Yuzhe Yang's lab}
+\thread{Foundation models for health data}{wearables work with Yuzhe Yang's lab}
 \begin{itemize}
-  \item Co-first author of \textbf{Inertia-1} (NeurIPS 2026, main track). Pretrained motion foundation models (5M--100M params,
-    6 architectures) on 18.2M~hours of accelerometry from 115K+~people and compared data, model,
-    and training choices on 15 datasets.
-  \item Designed and ran the sensor-fusion study, which found that multi-sensor models consistently beat single-sensor ones.
-  \item Co-first author of the follow-up journal paper (in prep.)\ on diagnosis, prognosis, and disease progression in
-    five cohorts, including the genetics of the learned embeddings and early work pairing them with LLMs.
-\end{itemize}
-
-\thread{Deep learning for genetics}{}
-\begin{itemize}
-  \item Developing a training loss that makes a network's learned trait heritable and genetically correlated with
-    disease, so a GWAS on it can find loci the original measurement misses. It works with any architecture.
+  \item \textbf{Wearable foundation models.} Inertia-1 (NeurIPS 2026 main track, co-first author), an open study of
+    pretraining on wrist accelerometry, with 5M--100M-parameter models in six architectures, 18.2M~hours of data from
+    115K+~people, and 15 evaluation datasets. Worked on much of the pretraining and evaluation, and showed that
+    combining sensors consistently outperforms any single sensor.
+  \item \textbf{Disease prediction and genetics.} A follow-up journal paper (in prep., co-first author) applies the models
+    to diagnosis, prognosis, and disease progression in five cohorts and studies the genetics of the learned traits, with
+    early work pairing them with LLMs.
+  \item \textbf{Genetics-aware training.} Developing a loss that pushes a model's learned traits to be heritable and genetically
+    correlated with disease.
 \end{itemize}
 
 \thread{Statistical genetics at biobank scale}{}
 \begin{itemize}
-  \item Leading a genome-wide test for gene--gene interactions in rare disease, supported by an Anthropic grant.
-  \item Leading a single-cell model of how genetic effects on gene expression shift across cell types and states.
-  \item Co-leading an atlas of genetic correlation across 3,570 UK Biobank trait pairs and 53 tissues.
-  \item Ran simulations (calibration, power, runtime) and real-data analyses for the papers below.
+  \item \textbf{Gene--gene interactions.} Co-developed scalable tests for interactions between variants (QuadKAST, co-first
+    author, and FAME) and ran their calibration and power simulations. Now extending it to rare disease,
+    supported by an Anthropic AI for Science grant.
+  \item \textbf{Gene--environment interactions.} Helped develop ENGINE, which learns which combinations of exposures
+    change genetic effects, and REGENA (second author, in revision), which separates trait scale and amplification from
+    real differences in genetic effects.
+  \item \textbf{Genetic effects across genes, cells, and tissues.} Ran real-data analyses for FLEX, which estimates the
+    heritability of rare variants gene by gene. Also building a single-cell model of genetic effects across cell
+    types and a genetic-correlation atlas across 53 tissues.
 \end{itemize}
 
 % ---------- publications ----------
@@ -67,7 +69,7 @@
   \pubnolink{Disentangling phenotype scale, amplification, and effect heterogeneity underlying polygenic GxE
       architecture of complex traits}
       {Z.~Liu, \me, X.~Qie, M.~Costantino, M.~Jeong, A.~Gorla, N.~Zaitlen, A.~Dahl, S.~Sankararaman}
-      {submitted to \vn{Nature Genetics}}
+      {in revision at \vn{Nature Genetics}\sep\href{https://github.com/sriramlab/REGENA}{code}}
   \pub{Comprehensive gene heritability estimation reveals the genetic architecture of rare coding variants
       underlying complex traits}
       {Z.~Liu, B.~Fu, M.~Jeong, P.~Anand, \me, et al.}
@@ -99,9 +101,9 @@
 
 % ---------- skills ----------
 \section{Skills}
-\textbf{Machine learning:} PyTorch, scikit-learn, Transformers, self-supervised pretraining, time-series and wearable sensor data\par
-\textbf{Statistics and genetics:} variance-component models, heritability and genetic correlation, GWAS, LDSC, single-cell genomics\par
-\textbf{Engineering:} Python, NumPy/pandas, Weights \& Biases, SLURM, Claude Code \sep
-\textbf{Data:} UK Biobank, NHANES, OneK1K, GTEx\par
+\textbf{Machine learning:} PyTorch, Transformers, CNNs, RNNs, self-supervised pretraining, multimodal fusion, model evaluation, LLMs\par
+\textbf{Statistics and genetics:} method-of-moments estimation, variance components, heritability, genetic correlation, GWAS,
+simulations\par
+\textbf{Engineering and data:} Python, NumPy/pandas, SLURM, Git, Claude Code \sep UK Biobank, NHANES, OneK1K, GTEx\par
 
 \end{document}
