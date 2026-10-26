@@ -3,7 +3,7 @@
 - title: "Inertia-1: An Open Exploration of Wearable Motion Foundation Models"
   authors: "Z. Xu*, A. Anand*, S. Jiang*, C. Zhuang, Z. Shuai, S. Sankararaman, Y. Yang"
   venue: NeurIPS 2026 main track
-  note: also an oral at the GenAI for Health workshop
+  note: also an oral at the GenAI4Health workshop
   status: published
   selected: true
   url: https://arxiv.org/abs/2607.06617
